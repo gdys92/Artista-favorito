@@ -1,0 +1,235 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+p {
+  font-family: 'Inria Serif', serif;
+}
+.header {
+  background-color: #dbf020;
+  position: absolute;
+  width:100%;
+  height: 50px;
+  z-index:3;
+}
+.header ul {
+  list-style:none;
+  overflow:hidden;
+  background-color: #dbf020;
+}
+.header ul a {
+  display:block;
+  padding:20px;
+  border-right:1px transparent #aaa;
+  text-decoration: none;
+}
+.header ul a:hover {
+  background:rgb(172, 161, 100); 
+}
+.header a {
+  color: #000000;
+}
+.header .logo {
+  float:left;
+  display:block;
+  padding-top: 5px;
+  padding-left: 10px;
+  width: 35px;
+  height: 40px;
+}
+.header .menu {
+  clear:both;
+  max-height:0;
+  transition:max-height .2s ease-out;
+}
+.header .menu-icon {
+  padding-top: 23px;
+  padding-right: 10px;
+  position:relative;
+  float:right;
+  cursor: pointer;
+}
+.header .menu-icon .nav-icon {
+  background:#000000;;
+  display:block;
+  height:2px;
+  width:18px;
+  position:relative;
+  transition:background .2s ease-out;
+}
+.header .menu-icon .nav-icon:before {
+  background:#000000;;
+  content:"";
+  display:block;
+  height:100%;
+  width:100%;
+  position:absolute;
+  transition:all .2s ease-out;
+  top:5px;  
+}
+.header .menu-icon .nav-icon:after {
+  background:#000000;
+  content:"";
+  display:block;
+  height:100%;
+  width:100%;
+  position:absolute;
+  transition:all .2s ease-out;
+  top:-5px;  
+}
+.header .menu-btn{
+  display:none;
+}
+.header .menu-btn:checked ~ .menu {
+  max-height:240px;
+}
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+  background:transparent;
+}
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+  top:0;
+}
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after {
+  transform: rotate(45deg);
+  top:0;
+}
+.hero h1 {
+  padding-top: 100px;
+  padding-bottom: 37px;
+  font-size: 60px;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: 42px;
+  display: flex;
+  justify-content: center;
+}
+.hero figure {
+  display: flex;
+  justify-content: center;
+}
+.start-image {
+  width: 100%;
+  max-width: 890px;
+  height: auto; 
+  padding-bottom: 40px;
+}
+.biography {
+  padding-top: 63px;
+  background: linear-gradient(to right, #dbf020, #f4ae3fc7);
+  clip-path: polygon(0% 0%, 100% 7%, 100% 97%, 0% 100%, 0% -11%, 0% 34%);
+}
+.biography h2 {
+  font-size: 40px;
+  color: #746446;
+  letter-spacing: 0;
+  line-height: 42px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+}
+.biography p {
+  display: table-cell;
+  padding: 27px;
+  width: 100%;
+  font-size: 15px;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+.discography {
+  padding-top: 52px;
+  background: linear-gradient(to right, #e7fb3054, #f4ae3fc7);
+  clip-path: polygon(0% 0%, 100% 7%, 100% 99%, 0% 100%, 0% -11%, 0% 34%);
+}
+.discography h2 {
+  font-size: 40px;
+  color: #746446;
+  line-height: 42px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+}
+.container1 {
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+}
+.container1 img {
+  width: 100%;
+  max-width: 400px;
+  height: auto; 
+}
+.container1 img:hover {
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+}
+.most-popular h2{
+  font-size: 40px;
+  color: #746446;
+  line-height: 42px;
+  padding-top: 62px;
+  padding-left: 30px
+}
+.most-popular .playlist {
+  padding: 40px 30px 10px 30px;
+  display: flex;
+  justify-content: center;
+}
+.most-popular .extra {
+  padding: 40px 30px 10px 30px;
+}
+.footer {
+  padding: 32px 30px 5px 30px;
+  background: linear-gradient(to right, #dbf020, #ee9b16c7);
+}
+.footer p {
+  display: inline-flex;
+  padding-left: 10px;
+}
+.footer .container2 img {
+  width: 48px;
+  height: 48px;
+}
+.container2 {
+  display: flex;
+  justify-content: space-between;
+}
+.container2 img {
+  padding: 2px;
+}
+.container2 img:hover {
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+}
+@media only screen and (min-width: 881px) {
+  .header {
+    height: 70px;
+  }
+  .header .logo {
+    padding-top: 15px;
+    padding-left: 30px;
+  }
+  .header li {
+      float:left;
+  }
+  .header li a {
+    padding-top: 28px;
+    padding-right: 48px;
+  }
+  .header .menu {
+    clear:none;
+    float:right;
+    max-height:none;
+  }
+  .header .menu-icon {
+    display:none;
+  }
+  .hero h1 {
+    padding-top: 172px;
+    font-size: 86px;
+    color: #746446;
+  }
+}
