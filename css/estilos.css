@@ -178,8 +178,23 @@ p {
   display: flex;
   justify-content: center;
 }
-.most-popular .extra {
+.playlist iframe {
+  max-width: 600px;
+  max-height: 400px;
+}
+.most-popular {
+  margin-bottom: 30px;
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 36%, rgba(249,242,10,0.30015756302521013) 100%);
+}
+.extra {
   padding: 40px 30px 10px 30px;
+  display: flex;
+  justify-content: center;
+}
+.extra iframe {
+  max-width: 500px;
+  max-height: 400px;
 }
 .footer {
   padding: 32px 30px 5px 30px;
