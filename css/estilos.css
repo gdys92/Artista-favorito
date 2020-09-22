@@ -4,10 +4,15 @@
 }
 body {
   font-family: 'IBM Plex Sans', sans-serif;
+  
 }
 p {
   font-family: 'Inria Serif', serif;
 }
+
+
+/*   Header   */
+
 .header {
   background-color: #dbf020;
   position: absolute;
@@ -97,6 +102,10 @@ p {
   transform: rotate(45deg);
   top:0;
 }
+
+
+/*  Hero  */
+
 .hero h1 {
   padding-top: 100px;
   padding-bottom: 37px;
