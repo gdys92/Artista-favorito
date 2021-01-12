@@ -1,3 +1,8 @@
+# Artista favorito
+
+Landing page dedicated to favorite artist.
+## Made with:
+
 - HTML5
 - CSS3
 - FLEX
